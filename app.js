@@ -22,7 +22,7 @@ let game = {
 //Make Player 1 object with player health attribute
 let humans = {
   health: "100",
-  humanDefense: randomIntFromInterval(20)
+
 };
 
 let aliens = {
