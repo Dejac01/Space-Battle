@@ -60,13 +60,15 @@ function alienAttack() {
   let firePower = randomIntFromInterval(2, 4);
   let attack = Math.random();
   if (attack > alienAccuracy[0] && attack < alienAccuracy[2]) {
+	showBanner("Aliens Hit!");
 	console.log('Aliens hit!!')
     if (ussAssembly.hull > 0) {
 	ussAssembly.hull = ussAssembly.hull- firePower	
     } 
 	else {ussAssembly.health-firePower}
   }
-else  {console.log('Aliens Missed!')}
+else 
+showBanner("Aliens Miss!"); {console.log('Aliens Missed!')}
   console.log(humans.health);
   showHealth();
 }
