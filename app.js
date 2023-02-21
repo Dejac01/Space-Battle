@@ -9,6 +9,9 @@
 
 console.log("I am Loaded");
 
+window.alert("WARNING!! Your nation is under attack! Are you ready to battle galactic Aliens to save humanity?");
+window.alert("INSTRUCTIONS:// You attack the first alien ship. If the ship survives, it attacks you. If you survive, you attack the ship again.If it survives, it attacks you again. If you destroy the ship, you have the option to attack the next ship or to retreat. If you retreat, the game is over.You win the game if you destroy all of the aliens. You lose the game if you are destroyed ");
+
 //Make the GAME an OBJECT
 let game = {
   round: 0,
