@@ -22,6 +22,7 @@ let game = {
 //Make Player 1 object with player health attribute
 let humans = {
   health: "100",
+  humanDefense: randomIntFromInterval(20)
 };
 
 let aliens = {
@@ -81,7 +82,7 @@ function humanAttack() {
     console.log(aliens.health);
     showHealth();
   } else {
-	showBanner("USS Assembly Miseses!");
+	showBanner("USS Assembly Misseses!");
     console.log("USS Assembly Misses!!!");
   }
   if (aliens.health <= 0) {
