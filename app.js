@@ -39,10 +39,14 @@ const showBanner = (msg) => {
 //Show health
 const showHealth = () => {
   let humanDisplay = document.querySelector(".health1");
-  humanDisplay.innerHTML = humans.health;
+  humanDisplay.innerHTML = "Health:" + humans.health;
+
+  let hullDisplay = document.querySelector(".hull");
+  hullDisplay.innerHTML = "hull:" + ussAssembly.hull;
+  console.log(hullDisplay)
 
   let alienDisplay = document.querySelector(".health2");
-  alienDisplay.innerHTML = aliens.health;
+  alienDisplay.innerHTML = "Health:" + aliens.health;
 };
 
 function randomIntFromInterval(min, max) {
@@ -52,15 +56,17 @@ function randomIntFromInterval(min, max) {
 
 //Alien Attack
 function alienAttack() {
+	console.log(ussAssembly.hull) 
   let firePower = randomIntFromInterval(2, 4);
   let attack = Math.random();
   if (attack > alienAccuracy[0] && attack < alienAccuracy[2]) {
+	console.log('Aliens hit!!')
     if (ussAssembly.hull > 0) {
-	ussAssembly.hull - firePower	
+	ussAssembly.hull = ussAssembly.hull- firePower	
     } 
 	else {ussAssembly.health-firePower}
   }
-
+else  {console.log('Aliens Missed!')}
   console.log(humans.health);
   showHealth();
 }
