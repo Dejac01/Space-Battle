@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="header">WELCOME TO SPACE BATTLE! CAN YOU SAVE THE WORLD?</h1>
+
+    <div class="Container">
+      <h1 class="Title">Aliens vs Humans</h1>
+
+
+      <div class="playerccontainer">
+        <!-----top row-->
+        <div class="rowone">
+          <div class="p2">
+            <img
+              src="https://cdn.pixabay.com/animation/2022/07/31/06/27/06-27-17-124_512.gif"
+              style="width: 100%"
+              alt=""
+              class="picA"
+            />
+            <p class="player">HUMANS</p>
+            <button
+            type="button" class="buttons"
+            onclick="humanAttack()">
+            Attack
+          </button>
+          <button
+          type="button" class="buttons"
+          onclick="humanRetreat()">
+          Retreat
+        </button>
+          </div>
+          <h1 class="banner"></h1>
+          <div class="p1">
+       
+            <img
+              src="https://bestanimations.com/media/ufos/661785383ufo-flying-saucer-animated-gif-image-11.gif"
+              style="width: 100%"
+              alt=""
+              class="picB"
+            />
+            <p class="player">ALIENS</p>
+         
+          </div>
+        </div>
+        <div class="healthContainer">
+      
+          <div class="human">
+            <div class="health1"></div>
+          </div>
+      
+          <div class="alien">
+            <div class="health2"></div>
+          </div>
+        </div>
+      </div>
+    
+
+    <script src="app.js" async defer></script>
+  </body>
+</html>

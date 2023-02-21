@@ -1,0 +1,81 @@
+body {
+  background-color: black;
+}
+
+.header {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.Title {
+  text-align: center;
+  color: orangered;
+}
+
+.healthContainer{
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons{
+  border: solid blue;
+  background-color: orangered;
+  
+}
+
+.human{
+  width: 30%;
+  height: 30%;
+  border: solid white;
+}
+
+.alien{
+  width: 30%;
+  height: 30%;
+  border: solid white;
+}
+
+
+
+.rowone {border:
+   solid rgb(9, 32, 238); height:50%; 
+   margin: 12px; display: flex;
+    justify-content: space-between;
+  position: relative;
+  background-image: url(https://cdn.mos.cms.futurecdn.net/9UmWCbyxpKaEGXjwFG7dXo.jpg)}
+  
+
+
+.picB{
+ width: 90%;
+ height: 70%;
+ 
+
+}
+
+.picA{
+  width: 90%;
+  height: 70%;
+  justify-content: center;
+ 
+ }
+
+ .player{
+  color: orangered;
+  font-size: 2em;
+  text-align: center;
+  font-size: bold;
+  
+ }
+
+ .health1, .health2{
+  color: azure;
+ }
+
+
+.banner{
+  color: white;
+}
